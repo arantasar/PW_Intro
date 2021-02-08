@@ -33,7 +33,7 @@ public class ItemInteraction : Interactable
 
         if (canInteract && playerInteraction.ObjectToInteract == null)
         {
-            playerInteraction.SubscribeInteractable(gameObject.GetComponent<ItemInteraction>());
+            playerInteraction.SubscribeInteractable(GetComponent<ItemInteraction>());
         }
         else if (!canInteract && playerInteraction.ObjectToInteract != null)
         {
